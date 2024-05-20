@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer 2.0</title>
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script type="module" src="./assets/js/main.js" defer></script>
+  </head>
+  <body>
+    <div id="app">
+      <div id="timer-wrapper">
+        <section id="timer">
+          <span id="minutes">25</span>
+          <span>:</span>
+          <span id="seconds">00</span>
+        </section>
+        <section id="controls">
+          <button data-action="addRunning" class="ph ph-play-circle"></button>
+
+          <button
+            data-action="stopRunning"
+            class="ph ph-pause-circle secondary"
+          ></button>
+
+          <button data-action="plusMinutes" class="ph ph-plus-circle"></button>
+
+          <button
+            data-action="minusMinutes"
+            class="ph ph-minus-circle"
+          ></button>
+        </section>
+      </div>
+
+      <div id="buttons">
+        <button data-button="setTree" class="ph ph-tree"></button>
+        <button data-button="setCloud" class="ph ph-cloud-snow"></button>
+        <button data-button="setStore" class="ph ph-storefront"></button>
+        <button data-button="setFlame" class="ph ph-flame"></button>
+      </div>
+    </div>
+  </body>
+</html>
